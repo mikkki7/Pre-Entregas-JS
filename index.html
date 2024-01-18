@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/3° Pre-Entrega/css/style.css">
+    <title>Curso de JavaScript</title>
+</head>
+<body>
+    <h1 class="titulo">Pre-Entregas de JavaScript</h1>
+    <!-- <h2>1° Pre-Entrega</h2> -->
+    <!-- <h2>2° Pre-Entrega</h2> -->
+    <h2 class="subtitulo">3° Pre-Entrega</h2>
+    <section class="contenedor-formulario">
+        <form id="form-user" action="#" method="post" enctype="multipart/form-data">
+            <!-- Input Nombre y Apellido -->
+            <div class="inputs-datos">
+                <label for="nombre"><p class="subtitulos-formulario">Nombre/s y Apellido/s</p></label>
+                <div class="contenedor-inputs">
+                    <input type="text" id="nombre-user" name="user_name" placeholder="Ingrese su nombre" class="ingreso-datos" required>
+                </div>
+            </div>
+            <!--Input Edad-->
+            <div class="inputs-datos">
+                <label for="edad"><p class="subtitulos-formulario">Edad</p></label>
+                <div class="contenedor-inputs">
+                    <input id="edad-user" type="number" placeholder="Ingrese su edad"
+                    class="ingreso-datos" required>
+                </div>
+            </div>
+            <!--Input Ubicacion-->
+            <div class="inputs-datos">
+                <label for="ubicacion--"><p class="subtitulos-formulario">Ubicacion</p></label>
+                <div class="contenedor-inputs">
+                    <input type="text" id="ubicacion-user" name="user_name" placeholder="Ingrese su ubicacion geografica" class="ingreso-datos" required>
+                </div>
+            </div>
+            <!-- Input Género -->
+            <div class="inputs-datos">
+                <label for="género"><p class="subtitulos-formulario">Género</p></label>
+                <div class="contenedor-inputs">
+                    <select id="genero-user" name="user_gender" class="ingreso-datos" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="no-binario">No Binario</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+            <!--Input DNI-->
+            <div class="inputs-datos">
+                <label for="dni"><p class="subtitulos-formulario">DNI</p></label>
+                <div class="contenedor-inputs">
+                    <input id="dni-user" type="number" placeholder="Ingrese su dni" class="ingreso-datos" required>
+                </div>
+            </div>
+            <!--Comienzo Input Telefono-->
+            <div class="inputs-datos">
+                <label for="numero"><p class="subtitulos-formulario">Teléfono</p></label>
+                <div class="contenedor-inputs">
+                    <input id="cel-user" type="tel" placeholder="Ingrese su numero" class="ingreso-datos" required>
+                </div>
+            </div>
+            <!-- Comienzo Input Correo-->
+            <div class="inputs-datos">
+                <label for="mail"><p class="subtitulos-formulario">Correo electrónico</p></label>
+                <div class="contenedor-inputs">
+                    <input id="email-user" type="email" placeholder="Ingrese su correo electrónico" class="ingreso-datos" required>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="contenedor-Bot-Ag">
+        <div class="rectangulo-Bot-Ag">
+            <input class="boton-agregar" type="submit" value="agregar">
+        </div>
+    </section>
+    <!--Contenedor Tarjetas Usuarios nuevos-->
+    <div class="user-contenedor">
+
+    </div>
+    
+    <script type="module" src="/3° Pre-Entrega/main.js"></script>
+</body>
+</html>
